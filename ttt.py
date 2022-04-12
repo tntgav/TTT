@@ -1,6 +1,5 @@
-from math import *
-from re import X
-import tttwintest
+from math import floor
+from winChecker import checkWins
 
 
 def create_board(x, y):
@@ -38,7 +37,7 @@ def playTurn(turn, board):
     spotX = int(input(pr))
     board = placeOnBoard(spotX, turn, board)
     display(board)
-    tttwintest.checkWins(board, turn)
+    checkWins(board, turn)
 
 #note to self, its in order y and then x, not x and then y.
 
